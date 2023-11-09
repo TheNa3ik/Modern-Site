@@ -8,4 +8,3 @@ signupBtn.addEventListener('click', ()=> {
   expandupSignupMenu.classList.add('active');
   loginDiv.classList.add('unactive')
 });
-
