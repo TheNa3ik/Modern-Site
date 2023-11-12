@@ -6,16 +6,16 @@
     <title>Login lmao</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\loginpagestyle.css">
 </head>
 <body>
     
-    <div class="container" id="container">
-        <div class="form-container sign-in">
+     <div class="container" id="container">                             <!-- загальний контейнер-вікно -->
+        <div class="form-container sign-in">                            <!-- контейнер-логіна -->
             <h1>Sign In</h1>
             
-            <form>
-                <div class="social-media-auth">
+            <form>                                                      <!-- форма-логіна -->
+                <div class="social-media-auth">                         <!-- соціальні мережі -->
                     <a href="#"><i class="fa-brands fa-google fa-lg"></i></a>
                     <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
@@ -24,9 +24,7 @@
                 
                 <span>or use your email and password</span>
                 <input type="email" placeholder="Email">
-                <hr>
                 <input type="password" placeholder="Password">
-                <hr>
                 <a href="#" id="forget-pass">Forget your password?</a>
                 <button type="button" id="btn-sign-in">Sign In</button>
             </form>
@@ -34,23 +32,30 @@
             <p id=>Not registered yet?</p>
         </div>
         
-        <div class="form-container sign-up">
+        <div class="form-container sign-up">                            <!-- контейнер-реєстрації -->
 
             <h1 id=>Sign up</h1>
             <p>Register with your information to get all site's features</p>
 
-            <div class="expandUp-signup-menu">
+            <div class="expandUp-input-menu">                           <!-- окремо для анімації вильоту інпутів -->
                 <form>
-                    <!-- <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email">
                     <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Repeat your password"> -->
+                    <input type="password" placeholder="Repeat your password">
                     <button type="button" id="btn-sign-up">Sign Up</button>
                 </form>
+            </div>                          
+            
+            <div class="expandUp-alreadyReg-menu">                          <!-- білий контейнер -->
+            <p id="alr-reg">Already registered?</p>
+            <h1>Sign In</h1>
+            <p>Log in with your information to use all site's features</p>
+            <button type="button" id="alr-sign-in">Sign In</button>
             </div>
-        
         </div>
+
     </div>
-    
-    <script src="js\script.js"></script>
+
+    <script src="js\loginpagescript.js"></script>
 </body>
 </html>
