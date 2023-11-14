@@ -1,3 +1,21 @@
+.my-block {
+    display: flex;
+    width: 350px;
+    max-width: 350px;
+    height: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 200px;
+    text-align: left;
+    justify-content: center;
+    background-color: #23232e;
+    border-radius: 15px;
+
+  }
+  
+
+
+
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
